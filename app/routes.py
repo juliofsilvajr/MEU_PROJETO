@@ -5,3 +5,8 @@ from app import app
 
 def index():
     return "Olá mundo"
+
+
+@app.route('/projetos')
+def projetos():
+    return 'projetos'
