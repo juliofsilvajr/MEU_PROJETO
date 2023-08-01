@@ -1,7 +1,9 @@
 
 # Título do Projeto
 Desenvolvimento de uma Plataforma Web para Pesquisa Eleitoral Utilizando Flask
+
 Resumo:
+
 O objetivo deste projeto de pesquisa é desenvolver uma plataforma web utilizando o framework Flask para conduzir pesquisas eleitorais de forma segura, precisa e acessível. A proposta visa criar um sistema onde institutos de pesquisa e organizações possam criar, gerenciar e analisar pesquisas eleitorais, coletando dados de eleitores e apresentando resultados em tempo real de maneira confiável.
 
 Justificativa:
