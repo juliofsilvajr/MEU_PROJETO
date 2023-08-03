@@ -3,9 +3,14 @@ from flask import render_template
 
 @app.route('/')
 def index():
-    return render_template('index.html'titulo = 'pagina inicial')
+    return render_template('index.html' ,titulo = 'pagina inicial')
 
 
-@app.route('/projetos')
-def projetos():
-    return render_template('projetos.html'titulo = 'projetos')
+@app.route('/contatos')
+def contatos():
+    return render_template('contatos.html' , titulo = 'contatos')
+
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html' , titulo = 'sobre')
