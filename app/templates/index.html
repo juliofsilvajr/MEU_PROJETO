@@ -1,8 +1,54 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-<section>
-    <h1>index</h1>
-    <p>conteudo index</p>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Bem-vindo à nossa Página Inicial</h1>
+        <p>Esta é a página inicial do nosso site, onde você encontrará informações importantes sobre nossos produtos e serviços.</p>
+        <p>Adicione aqui mais detalhes sobre a sua empresa, missão, visão ou qualquer outra informação relevante.</p>
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+    </div>
+</section>
+
+<section class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="produto">
+        <img src="caminho-para-imagem-produto-1.jpg" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Uma breve descrição sobre o Produto 1 e seus principais recursos.</p>
+        <a href="#" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="produto">
+        <img src="caminho-para-imagem-produto-2.jpg" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Uma breve descrição sobre o Produto 2 e seus principais recursos.</p>
+        <a href="#" class="btn-comprar">Comprar</a>
+    </div>
+</section>
+
+<section class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servico">
+        <h3>Serviço 1</h3>
+        <p>Descrição detalhada do Serviço 1 que oferecemos aos nossos clientes. Explique os benefícios e vantagens deste serviço.</p>
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+    </div>
+    <div class="servico">
+        <h3>Serviço 2</h3>
+        <p>Descrição detalhada do Serviço 2 que oferecemos aos nossos clientes. Explique os benefícios e vantagens deste serviço.</p>
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+    </div>
+</section>
+
+<section class="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="depoimento">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tortor euismod, cursus nunc eu, aliquam turpis. Quisque suscipit nisi nec quam venenatis, vel laoreet velit ullamcorper."</p>
+        <p><strong>Nome do Cliente 1</strong></p>
+    </div>
+    <div class="depoimento">
+        <p>"Praesent luctus felis sit amet nulla ullamcorper, non auctor sapien fringilla. Duis elementum lorem nec metus lacinia gravida."</p>
+        <p><strong>Nome do Cliente 2</strong></p>
+    </div>
 </section>
 {% endblock %}

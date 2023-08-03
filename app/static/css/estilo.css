@@ -1,0 +1,188 @@
+/* Estilos CSS (opcional, você pode personalizar conforme necessário) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e00c0c;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+/* Estilo do herói (seção principal) */
+.hero {
+    background-image: url('caminho-para-imagem-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero .btn-saiba-mais {
+    display: inline-block;
+    background-color: #e00c0c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-saiba-mais:hover {
+    background-color: #c90808;
+}
+
+/* Estilo dos produtos em destaque */
+.produtos {
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.produto {
+    margin: 0 auto 40px;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #444;
+}
+
+.produto .btn-comprar {
+    display: inline-block;
+    background-color: #008cba;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.produto .btn-comprar:hover {
+    background-color: #006080;
+}
+
+/* Estilo dos serviços */
+.servicos {
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.servico {
+    margin: 0 auto 40px;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 16px;
+    color: #444;
+}
+
+.servico .btn-saiba-mais {
+    display: inline-block;
+    background-color: #e00c0c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.servico .btn-saiba-mais:hover {
+    background-color: #c90808;
+}
+
+/* Estilo dos depoimentos */
+.depoimentos {
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.depoimento {
+    margin: 0 auto 40px;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento p {
+    font-size: 16px;
+    color: #444;
+}
+
+.depoimento strong {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
