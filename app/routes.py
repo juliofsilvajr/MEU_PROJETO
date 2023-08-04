@@ -2,8 +2,8 @@ from app import app
 from flask import render_template
 
 @app.route('/')
-def index():
-    return render_template('index.html' ,titulo = 'pagina inicial')
+def home():
+    return render_template('home.html' ,titulo = 'pagina inicial')
 
 
 @app.route('/contatos')
