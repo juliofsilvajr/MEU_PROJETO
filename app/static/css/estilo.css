@@ -1,84 +1,111 @@
-/* Estilos CSS (opcional, você pode personalizar conforme necessário) */
+/* Estilos para toda a página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Estilo para o cabeçalho */
 header {
-    background-color: #e00c0c;
+    background-color: #cc0a2b;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li {
+nav li {
     display: inline-block;
     margin-right: 20px;
 }
 
-section {
-    padding: 40px 20px;
+nav a {
+    color: #630f0f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* Estilo do herói (seção principal) */
+nav a:hover {
+    color: #4208c9;
+}
+
+/* Estilo para a seção de herói */
 .hero {
-    background-image: url('caminho-para-imagem-hero.jpg');
+    background-image: url('https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/design/design_hero_static__b5n04x7u9s9y_large.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #a81313;
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 0;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .hero .btn-saiba-mais {
     display: inline-block;
-    background-color: #e00c0c;
-    color: #fff;
+    background-color: #fff;
+    color: #e00c0c;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 5px;
-    margin-top: 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero .btn-saiba-mais:hover {
-    background-color: #c90808;
+    background-color: #e00c0c;
+    color: #fff;
 }
 
-/* Estilo dos produtos em destaque */
+/* Estilo para a seção de produtos em destaque */
 .produtos {
     text-align: center;
 }
 
 .produtos h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
 .produto {
-    margin: 0 auto 40px;
+    display: inline-block;
+    margin: 0 15px;
     max-width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
 }
 
 .produto img {
@@ -94,41 +121,47 @@ section {
 .produto p {
     font-size: 16px;
     color: #444;
+    margin-bottom: 20px;
 }
 
 .produto .btn-comprar {
     display: inline-block;
-    background-color: #008cba;
+    background-color: #e00c0c;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
 .produto .btn-comprar:hover {
-    background-color: #006080;
+    background-color: #c90808;
 }
 
-/* Estilo dos serviços */
+/* Estilo para a seção de serviços */
 .servicos {
     text-align: center;
 }
 
 .servicos h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
 .servico {
-    margin: 0 auto 40px;
+    display: inline-block;
+    margin: 0 15px;
     max-width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
 }
 
 .servico h3 {
@@ -139,6 +172,7 @@ section {
 .servico p {
     font-size: 16px;
     color: #444;
+    margin-bottom: 20px;
 }
 
 .servico .btn-saiba-mais {
@@ -148,8 +182,7 @@ section {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
@@ -157,32 +190,36 @@ section {
     background-color: #c90808;
 }
 
-/* Estilo dos depoimentos */
+/* Estilo para a seção de depoimentos */
 .depoimentos {
     text-align: center;
 }
 
 .depoimentos h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
 .depoimento {
-    margin: 0 auto 40px;
-    max-width: 500px;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .depoimento p {
     font-size: 16px;
     color: #444;
+    margin-bottom: 10px;
 }
 
 .depoimento strong {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
+    font-size: 18px;
+}
+
+.depoimento:hover {
+    transform: translateY(-5px);
 }
