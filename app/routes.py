@@ -3,8 +3,8 @@ from flask import render_template, url_for, request, flash
 from app.forms import Contato
 
 @app.route('/')
-def index():
-    return render_template('index.html',titulo = 'Página inicial')
+def home():
+    return render_template('home.html',titulo = 'Página inicial')
 
 @app.route('/contatos', methods=['POST', 'GET'])
 def contatos():
@@ -40,3 +40,7 @@ def sobre():
 @app.route('/projetos')
 def projetos():
     return render_template('projetos.html', titulo = 'Projetos' )
+
+@app.route('/teste')
+def teste():
+    return render_template('teste.html')
