@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .login-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .login-form {
+            display: none;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça Login</h1>
+    <div class="login-container">
+        <p>Clique abaixo para fazer login:</p>
+        <button id="showLoginForm">Mostrar Formulário de Login</button>
+        <div class="login-form" id="loginForm">
+            <form action="processar_login.php" method="POST">
+                <input type="text" name="email" placeholder="E-mail" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const showLoginFormButton = document.getElementById('showLoginForm');
+        const loginForm = document.getElementById('loginForm');
+
+        showLoginFormButton.addEventListener('click', () => {
+            loginForm.style.display = 'block';
+            showLoginFormButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+

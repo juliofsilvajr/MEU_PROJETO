@@ -29,6 +29,19 @@ def contatos():
 
     return render_template('contatos.html', titulo = 'Contatos',formulario = formulario,dados_formulario = dados_formulario)
 
+@app.route('/cadastro', methods=['POST', 'GET'])
+def Cadastro():
+    cadastro = Cadastro()
+    print('Acessou a rota de cadastro!')
+    nome = cadastro.nome.data
+    email = cadastro.email.data
+    telefone = cadastro.telefone.data
+    senha = cadastro.senha.data
+
+    novo_cadastro = CadastroModel(nome = nome, email=email, telefone=telefone, senha=senha)
+    db.session.add(novo_cadastro)
+    db.session.commit()
+
 @app.route('/sobre')
 def sobre():
     return render_template('sobre.html', titulo = 'Sobre')
@@ -40,3 +53,10 @@ def projetos():
 @app.route('/teste')
 def teste():
     return render_template('teste.html')
+
+ 
+
+@app.route('/login')
+def login():
+    return render_template('login.html', titulo = 'login')
+
