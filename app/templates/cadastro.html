@@ -1,56 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <h1>Cadastro</h1>
-    <form action="processar_cadastro.php" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        
-        <input type="submit" value="Cadastrar">
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<section class="main-content">
+  <h2 class="mb-4">Cadastre-se</h2>
+  <form action="" method="post">
+    {{ cadastro.csrf_token }}
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="nome">Nome</label>
+        {{ cadastro.nome(class="form-control", placeholder="Digite aqui o seu nome")}}
+      </div>
+      
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="email">Email</label>
+              {{ cadastro.email(class="form-control", placeholder="Digite aqui o seu e-mail")}}      
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="senha">Senha</label>
+              {{ cadastro.senha(class="form-control", placeholder="Digite aqui o seu e-mail")}}
+              </div>
+      </div>
+    {{ cadastro.enviar(class="btn btn-primary")}} 
+  </form>
+</section>
+{% endblock %}
